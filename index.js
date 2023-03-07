@@ -1,4 +1,3 @@
-import './style.css';
 import * as appFunction from './modules/appfunctions.js';
 import { checkTask } from './modules/checkbox.js';
 
