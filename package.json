@@ -7,6 +7,12 @@
   "scripts": {
     "test": "jest"
   },
+  "jest": {
+    "resetMocks": false,
+    "setupFiles": [
+      "jest-localstorage-mock"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SamTush/toDo-list-app.git"
@@ -32,3 +38,4 @@
     "stylelint-scss": "^3.21.0"
   }
 }
+
