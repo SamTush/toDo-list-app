@@ -1,6 +1,5 @@
-import './style.css';
-import * as appFunction from './modules/appFunction.js';
-import { checkTask } from './modules/checkbox';
+import * as appFunction from './modules/appfunctions.js';
+import { checkTask } from './modules/checkbox.js';
 
 const todoList = document.querySelector('.todo-list');
 const addNewTodoInput = document.querySelector('.new-todo-input');
