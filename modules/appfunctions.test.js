@@ -1,6 +1,11 @@
 import { JSDOM } from 'jsdom';
 import 'jest-localstorage-mock';
 
+const setup = {
+  appConfig: jest.fn(),
+};
+Object.defineProperty(window, 'setup', setup);
+
 const dom = new JSDOM(
   '<!DOCTYPE html><html><body><ul class="todo-list"></ul></body></html>',
 );
