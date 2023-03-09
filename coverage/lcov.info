@@ -1,5 +1,5 @@
 TN:
-SF:modules\appfunctions.js
+SF:modules/appfunctions.js
 FN:5,(anonymous_0)
 FN:9,(anonymous_1)
 FN:10,(anonymous_2)
@@ -128,7 +128,7 @@ BRF:15
 BRH:4
 end_of_record
 TN:
-SF:modules\checkbox.js
+SF:modules/checkbox.js
 FN:1,(anonymous_0)
 FN:10,(anonymous_1)
 FN:13,(anonymous_2)

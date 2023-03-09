@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1678372739609" clover="3.2.0">
-  <project timestamp="1678372739609" name="All files">
+<coverage generated="1678373374181" clover="3.2.0">
+  <project timestamp="1678373374181" name="All files">
     <metrics statements="74" coveredstatements="36" conditionals="17" coveredconditionals="5" methods="24" coveredmethods="8" elements="115" coveredelements="49" complexity="0" loc="74" ncloc="74" packages="1" files="2" classes="2"/>
-    <file name="appfunctions.js" path="C:\Users\HP\Desktop\codeChallenge\toDo-list-app\modules\appfunctions.js">
+    <file name="appfunctions.js" path="/Users/macbook pro/Desktop/toDo-list-app-2/modules/appfunctions.js">
       <metrics statements="63" coveredstatements="31" conditionals="15" coveredconditionals="4" methods="21" coveredmethods="7"/>
       <line num="3" count="1" type="cond" truecount="2" falsecount="0"/>
       <line num="5" count="1" type="stmt"/>
@@ -68,7 +68,7 @@
       <line num="115" count="0" type="stmt"/>
       <line num="116" count="0" type="stmt"/>
     </file>
-    <file name="checkbox.js" path="C:\Users\HP\Desktop\codeChallenge\toDo-list-app\modules\checkbox.js">
+    <file name="checkbox.js" path="/Users/macbook pro/Desktop/toDo-list-app-2/modules/checkbox.js">
       <metrics statements="11" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="1"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="2" type="stmt"/>
