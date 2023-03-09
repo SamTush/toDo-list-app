@@ -1,8 +1,8 @@
 import { displayCheck } from './checkbox.js';
 
-export const tasksArray = JSON.parse(localStorage.getItem('tasksArray')) || [];
+const tasksArray = JSON.parse(localStorage.getItem('tasksArray')) || [];
 
-export const saveToLocalStorage = () => {
+const saveToLocalStorage = () => {
   localStorage.setItem('tasksArray', JSON.stringify(tasksArray));
 };
 
@@ -16,7 +16,7 @@ const updadeIds = () => {
   });
 };
 
-export const displayTasks = () => {
+const displayTasks = () => {
   const todoList = document.querySelector('.todo-list');
   todoList.innerHTML = '';
   tasksArray.forEach((task) => {
@@ -66,7 +66,7 @@ const unfocusTask = (taskLi) => {
   taskLi.style.backgroundColor = 'white';
 };
 
-export const focusTask = (btn = null) => {
+const focusTask = (btn = null) => {
   toggleIcon(btn);
   document.querySelectorAll('.task-li').forEach((taskLi) => {
     if (taskLi === btn.closest('.task-li')) {
@@ -75,7 +75,7 @@ export const focusTask = (btn = null) => {
   });
 };
 
-export const addTask = (taskInput) => {
+const addTask = (taskInput) => {
   if (taskInput.value) {
     tasksArray.push({
       description: taskInput.value,
@@ -87,7 +87,7 @@ export const addTask = (taskInput) => {
   }
 };
 
-export const removeTask = (task) => {
+const removeTask = (task) => {
   const taskIndex = tasksArray.indexOf(task);
   tasksArray.splice(taskIndex, 1);
   updadeIds();
@@ -96,7 +96,7 @@ export const removeTask = (task) => {
   displayTasks();
 };
 
-export const EditTask = (taskInput) => {
+const EditTask = (taskInput) => {
   const taskLi = taskInput.closest('.task-li');
   const task = tasksArray.find(
     (task) => task.index === +taskLi.id.split('-')[1],
@@ -107,11 +107,22 @@ export const EditTask = (taskInput) => {
   unfocusTask(taskLi);
 };
 
-export const removeAllCompleted = () => {
+const removeAllCompleted = () => {
   const completedTaks = tasksArray.filter((task) => task.completed);
   completedTaks.forEach((task) => removeTask(task));
   updadeIds();
   sortTasks();
   saveToLocalStorage();
   displayTasks();
+};
+
+export {
+  saveToLocalStorage,
+  tasksArray,
+  displayTasks,
+  focusTask,
+  addTask,
+  removeTask,
+  EditTask,
+  removeAllCompleted,
 };
